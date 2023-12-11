@@ -59,7 +59,8 @@ public class App
         car.setManufacturer("Citroën");
         car.setPlate("AABBCC");
         clients.get(0).addCar(car);
-        (new CarDAO()).save(car);
+       car= (new CarDAO()).save(car);
+        System.out.println(car);
 
         // Show clients again with their cars. We can see the new car added
         clients = (new ClientDAO()).getAll();

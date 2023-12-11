@@ -22,6 +22,11 @@ import java.util.List;
 
 
 public class FileUtils {
+    /**
+     * Funcion en la que se escribe en el archivo csv del proyecto con todos los clientes
+     * @param fileName nombre archivo
+     * @param workers lista de trabajadores
+     */
 
     public static void toCSV(String fileName, List<Worker> workers) {
         //throw new RuntimeException("Not implemented yet!");

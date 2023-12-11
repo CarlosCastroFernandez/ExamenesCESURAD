@@ -5,6 +5,8 @@
 E	java:S106/"+Replace this use of System.out by a logger.(­íö‘ýÿÿÿÿ
 @	java:S1060"+Replace this use of System.out by a logger.(Ú›¸‰
 @	java:S1068"+Replace this use of System.out by a logger.(·Þù¦
+[
+java:S1155:">Use isEmpty() to check whether the collection is empty or not.(Ë‹©Ø8í”ÆÅ1
 E	java:S106;"+Replace this use of System.out by a logger.(ùˆ¶­þÿÿÿÿ
 @	java:S106>"+Replace this use of System.out by a logger.(ç‚›•
 E	java:S106A"+Replace this use of System.out by a logger.(êŠä¥üÿÿÿÿ

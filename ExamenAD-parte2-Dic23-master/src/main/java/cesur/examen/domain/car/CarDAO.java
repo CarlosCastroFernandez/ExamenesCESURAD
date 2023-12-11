@@ -20,6 +20,11 @@ import java.util.List;
 
 @Log
 public class CarDAO implements DAO<Car> {
+    /**
+     * Sube un coche a la base de datos
+     * @param car
+     * @return devuelve el coche que se a subido a la base de datos
+     */
     @Override
     public Car save(Car car) {
 
@@ -29,7 +34,6 @@ public class CarDAO implements DAO<Car> {
             s.persist(car);
             t.commit();
         }
-
         return car;
     }
 
@@ -52,6 +56,12 @@ public class CarDAO implements DAO<Car> {
     public List<Car> getAll() {
         return null;
     }
+
+    /**
+     * Funcion en la que se trae todos los coches que tienen un fabricante en especifico
+     * @param manufacturer
+     * @return devuelve una lista de coches
+     */
 
     public List<Car> getAllByManufacturer(String manufacturer){
         var out = new ArrayList<Car>();

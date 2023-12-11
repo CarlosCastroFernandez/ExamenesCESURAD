@@ -40,7 +40,10 @@ public class ClientDAO implements DAO<Client> {
         return null;
     }
 
-
+    /**
+     * Se trae todos los clientes que estuvieran en la base de datos
+     * @return devuelve una lista con todos los clientes
+     */
     @Override
     public List<Client> getAll() {
         var out = new ArrayList<Client>();
