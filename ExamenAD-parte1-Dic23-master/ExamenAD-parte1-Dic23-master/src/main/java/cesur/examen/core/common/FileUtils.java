@@ -28,7 +28,6 @@ public class FileUtils {
 
         String nuevo="";
 
-        System.out.println(workers);
         try (BufferedWriter writer=new BufferedWriter(new FileWriter(fileName))) {
 
             for(int i=0;i<workers.size();i++){
@@ -37,7 +36,7 @@ public class FileUtils {
                 nuevo=workers.get(i).getId()+","+workers.get(i).getDni()+","+workers.get(i).getName()+","+fechaString;
                 writer.write(nuevo);
                 writer.newLine();
-                System.out.println(nuevo);
+
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
